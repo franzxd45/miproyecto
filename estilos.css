@@ -1,0 +1,536 @@
+/* BASE*/
+
+*{ /*selector universal*/
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    padding-top: 90px;
+    background:#f8fafc;
+    color:#222;
+}
+
+/* LOGO COLORS */
+.aven{ color: orange; }
+.turismo{ color: #0b65be; }
+
+
+/* HEADER*/
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000; /* el elemento aparece encima o debajo de otro cuando se superponen*/
+    background:rgba(0,0,0,.4);
+    backdrop-filter:blur(10px);
+}
+
+.nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 20px;
+}
+
+.logo{
+    color:#fff;
+    font-size:1.8rem;
+    font-weight:700;
+}
+
+.menu{
+    display:flex;
+    gap:25px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+
+/* Primera parte*/
+
+.primero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../imagenes/pantalla.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.primerocontenido{ max-width:900px; }
+
+.primero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.primero p{
+    font-size:1.2rem;
+    margin-bottom:35px;
+}
+
+
+/* SEARCH */
+.search-box{
+    background:white;
+    border-radius:15px;
+    padding:15px;
+    display:flex;
+    gap:10px; /*crear separacion sin tener que usar margin, va de la mano de flexbox o grid*/
+    max-width:850px;
+    margin:auto;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.search-box input{
+    flex:1;
+    padding:15px;
+    border:none;
+    background:#f2f5f8;
+    border-radius:10px;
+}
+
+.search-box button{
+    border:none;
+    padding:15px 30px;
+    background:#ff6b35;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+
+/* cajas/tablas*/
+
+.cajas{
+    max-width:1200px;
+    margin:80px auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:0 20px;
+}
+
+.tabla{
+    background:white;
+    text-align:center;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.tabla h3{
+    color:#ff6b35;
+    font-size:2rem;
+}
+
+
+/* SECCIONES GENERALES*/
+.section{
+    max-width:1200px;
+    margin:100px auto;
+    padding:0 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.5rem;
+}
+
+.section-title p{
+    color:#777;
+}
+
+
+/* CARTAS DE LOS DESTINOS*/
+.destinos-section{
+    padding:100px 20px;
+    background:#f8fafc;
+}
+.destinos-header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.destinos-header h2{
+    font-size:2.8rem;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+
+/*  ACTIVIDADES*/
+
+
+.activities{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.activity{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.activity img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+
+/* PARTES DE BOTONES*/
+
+.cta{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.cta h2{
+    font-size:3rem;
+}
+
+.cta button{
+    margin-top:20px;
+    padding:15px 35px;
+    border:none;
+    border-radius:10px;
+    background:#ff6b35;
+    color:white;
+    cursor:pointer;
+}
+
+
+/* FOOTER*/
+
+footer{
+    background:#020617;
+    color:#cbd5e1;
+    padding:50px 20px;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.footer-container h3{
+    color:white;
+}
+
+.footer-container a{
+    display:block;
+    color:#cbd5e1;
+    text-decoration:none;
+    margin:8px 0;
+}
+
+
+/* CONTACTO*/
+
+.contact-section{
+    padding:100px 20px;
+}
+
+.contact-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.contact-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:400px 1fr;
+    gap:40px;
+}
+
+.info-card{
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    display:flex;
+    gap:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.contact-form{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+}
+
+
+/* FOOTER DESTINJOS*/
+
+.paquetes-section{
+    padding:100px 20px;
+    background:#0f172a;
+    color:white;
+}
+
+.paquetes-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.paquetes-header h2{
+    font-size:2.8rem;
+    margin-bottom:10px;
+}
+
+.paquetes-header p{
+    color:#cbd5e1;
+}
+.paquetes-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+.paquete-card{
+    background:#111827;
+    border:1px solid #1f2937;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+    position:relative;
+}
+
+.paquete-card:hover{
+    transform:translateY(-10px);
+    border-color:#ff6b35;
+}
+.destacado{
+    background:#1f2937;
+    border:2px solid #ff6b35;
+    transform:scale(1.05);
+}
+.paquete-card h3{
+    font-size:1.5rem;
+    margin-bottom:10px;
+}
+
+.precio{
+    font-size:2.5rem;
+    color:#ff6b35;
+    font-weight:bold;
+}
+
+.sub{
+    color:#94a3b8;
+    margin-bottom:20px;
+}
+.paquete-card ul li{
+    margin:10px 0;
+    color:#e2e8f0;
+    font-size:14px;
+}
+
+/* BOTÓN */
+.paquete-card button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    background:#ff6b35;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.paquete-card button:hover{
+    background:#e85a28;
+}
+/*TABLAS DE DESTINO*/
+table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    border: 2px solid #1e3a8a;
+}
+
+th{
+    background: #1e3a8a;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #cbd5e1;
+}
+
+tr:nth-child(even){
+    background: #f1f5f9;
+}
+
+tr:hover{
+    background: #dbeafe;
+}
+
+/* MEDIAQUERES*/
+
+/* COMPUTADORA */
+
+
+@media (min-width: 1025px){
+
+    body{
+        padding-top:120px;
+    }
+
+    .primero h1{
+        font-size:3rem;
+    }
+
+    .cajas{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .menu{
+        flex-direction:row;
+    }
+
+    .search-box{
+        flex-direction:row;
+    }
+
+    .contact-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+
+/* TABLET */
+@media (min-width:769px) and (max-width:1024px){
+
+    body{
+        padding-top:140px;
+    }
+
+    .primero h1{
+        font-size:2.6rem;
+    }
+
+    .cajas{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .menu{
+        flex-direction:row;
+    }
+
+    .search-box{
+        flex-direction:row;
+    }
+
+    .card img,
+    .activity img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+}
+/* CELULAR */
+@media (max-width:768px){
+
+    body{
+        padding-top:160px;
+    }
+
+    .primero h1{
+        font-size:2.2rem;
+    }
+
+    .cajas{
+        grid-template-columns:1fr;
+    }
+
+    .menu{
+        flex-direction:column;
+    }
+
+    .search-box{
+        flex-direction:column;
+    }
+
+    .card img,
+    .activity img{
+        width:100%;
+        height:200px;
+        object-fit:cover;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+}

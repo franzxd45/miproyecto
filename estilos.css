@@ -63,7 +63,7 @@ header{
     height:100vh;
     background:
     linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("../imagenes/pantalla.jpg");
+    url("https://i0.wp.com/notibolivia.com/wp-content/uploads/2025/01/esp_web_alejandra_4_corani_lake.jpg?fit=770,430&ssl=1");
     background-size:cover;
     background-position:center;
     display:flex;
@@ -122,7 +122,7 @@ header{
 
 .cajas{
     max-width:1200px;
-    margin:80px auto;
+    margin: 80px auto;
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:20px;
